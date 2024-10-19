@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejasvi Gharat | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+        <style>
+        /* Reset */  
+        * {  
+          margin: 0;  
+          padding: 0;  
+          box-sizing: border-box;  
+        }  
+          
+        /* Body styling */  
+        body {  
+          background-color: rgb(0, 0, 33);  
+          color: #ffffff;  
+          font-family: 'Poppins', sans-serif;  
+          line-height: 1.6;  
+        }  
+          
+        /* Navigation */  
+        nav {  
+          display: flex;  
+          justify-content: space-between;  
+          align-items: center;  
+          height: 70px;  
+          background-color: #1f2c48;  
+          padding: 0 10%;  
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+        }  
+
+        html{
+            scroll-behavior: smooth;
+        }
+          
+        nav .left {  
+          font-size: 1.5rem;  
+          font-weight: 600;  
+        }  
+          
+        nav ul {  
+          display: flex;  
+          list-style: none;  
+          margin: 0;  
+          padding: 0;  
+        }  
+          
+        nav ul li {  
+          margin: 0 15px;  
+        }  
+          
+        nav ul li a {  
+          text-decoration: none;  
+          color: #fff;  
+          font-weight: 500;  
+          transition: color 0.3s;  
+        }  
+          
+        nav ul li a:hover {  
+          color: #f9d342;  
+        }  
+          
+        /* Hero Section */  
+        .main {  
+          background-image: url('simple.jpeg');  
+          background-size: cover;  
+          background-position: center;  
+          height: 100vh;  
+          display: flex;  
+          justify-content: center;  
+          align-items: center;  
+          text-align: center;  
+        }  
+          
+        .main h1 {  
+          font-size: 3rem;  
+          margin-bottom: 20px;  
+        }  
+          
+        .main span {  
+          color: #f9d342;  
+        }  
+          
+        .main p {  
+          font-size: 1.5rem;  
+        }  
+          
+        #element {  
+          margin-top: 20px;  
+          font-size: 1.5rem;  
+        }  
+          
+        /* Section Styling */  
+        section {  
+          padding: 60px 10%;  
+        }  
+          
+        .section-title {  
+          text-align:center;  
+          font-size: 2.5rem;  
+          margin-bottom: 40px;  
+          color: #f9d342;  
+        }  
+          
+        hr {  
+          border: none;  
+          height: 2px;  
+          background-color: #f9d342;  
+          width: 50%;  
+          margin: 0 auto;  
+          margin-bottom: 40px;  
+        }  
+          
+        /* About Section */  
+        .about-container {  
+          display: flex;  
+          justify-content: center;  
+          align-items: center;  
+          flex-wrap: wrap;  
+        }  
+          
+        .about-image img {  
+          width: 300px;  
+          border-radius: 10px;  
+          margin: 20px;  
+        }  
+          
+        .about-content {  
+          margin-left: 30px;  
+          margin-top: 20px;  
+        }  
+          
+        .about-content p {  
+          font-size: 1.2rem;  
+          max-width: 600px;  
+          line-height: 1.8;  
+        }  
+          
+/* General Styles */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Education Section */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.educations-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping in smaller screens */
+    gap: 20px; /* Add space between cards */
+    margin: 0 auto;
+    max-width: 1200px; /* Controls the overall width of the container */
+    padding: 0 20px;
+}
+
+.education-card {
+    background-color: #1f2c48;
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h3 {
+    margin-bottom: 15px;
+    color: #f9d342;
+}
+
+.education-card p {
+    font-size: 1rem;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .educations-container {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
+        align-items: center; /* Align cards to the center */
+    }
+}
+
+
+
+          
+        /* Skills Section */  
+       /* General Styles */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.sub-section-title {
+    color: #f9d342;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Container for both sections */
+.skills-achievements-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+/* Skills and Achievements Section Styles */
+.skills-container,
+.achievements-container {
+    background-color: #1f2c48;
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    width: 45%; /* Adjust width to balance both sections */
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills List */
+.skills-list li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Achievements List */
+.achievements-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .skills-container,
+    .achievements-container {
+        width: 100%; /* Full width for smaller screens */
+        margin: 10px 0;
+    }
+}
+
+          
+        /* Projects Section */  
+        .projects-container {  
+          display: flex;  
+          justify-content: space-around;  
+          flex-wrap: wrap;  
+        }  
+          
+        .project-card {  
+          background-color: #1f2c48;  
+          width: 300px;  
+          margin: 15px;  
+          padding: 20px;  
+          text-align: center;  
+          border-radius: 10px;  
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+        }  
+          
+        .project-card h4 {  
+          margin-bottom: 15px;  
+          color: #f9d342;  
+        }  
+        .project-card a{
+          color: #f9d342;
+        }
+          
+        .project-card p {  
+          font-size: 1rem;  
+        }  
+          
+        /* Contact Section */  
+        .contact-section {  
+          text-align: center;  
+          background-color: #343a40;  
+          color: white;  
+          padding: 60px 10%;  
+        }  
+          
+        .contact-details p {  
+          font-size: 1.2rem;  
+        }  
+          
+        .contact-details a {  
+          color: #f9d342;  
+          text-decoration: none;  
+          font-weight: 500;  
+        }  
+          
+        .social-links a {  
+          color: #f9d342;  
+          margin: 0 15px;  
+          font-size: 1.5rem;  
+          transition: color 0.3s;  
+        }  
+          
+        .social-links a:hover {  
+          color: #ffcc00;  
+        }  
+          
+        footer {  
+          margin-top: 40px;  
+          text-align: center;  
+          background-color: #1f252a;  
+          padding: 15px 0;  
+        }  
+          
+        footer p {  
+          color: #999;  
+        }  
+          
+        /* Responsive */  
+        @media (max-width: 768px) {  
+          .about-container {  
+         flex-direction: column;  
+         text-align: center;  
+          }  
+          
+          .about-content {  
+         margin-left: 0;  
+         margin-top: 20px;  
+          }  
+          
+          .skills-container,  
+          .projects-container,  
+          .educations-container {  
+         flex-direction: column;  
+         align-items: center;  
+          }  
+          
+          nav ul {  
+         flex-direction: column;  
+         margin-top: 10px;  
+          }  
+          
+          nav ul li {  
+          margin: 10px 0;  
+          }  
+          
+          .main h1 {  
+          font-size: 3rem;  
+          }  
+          
+          .main p,  
+          #element {  
+         font-size: 1.2rem;  
+          }  
+        }
+
+        </style>
+        
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="TejasviGharat_CV.pdf" target="_blank">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="main">
+        <div>
+            <h1>Hello, I'm <span>Tejasvi Pankaj Gharat</span></h1>
+            <p>Final Year B.Tech Mechanical Engineering Student</p>
+            <span id="element"></span>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="photo.jpg" alt="About Me">
+            </div>
+            <div class="about-content">
+                <p>Hello! I'm Tejasvi, a Mechanical Engineering student from Veermata Jijabai Technological Institute,
+                    Mumbai. I have a passion for creating innovative solutions that help farmers and improve
+                    agricultural systems. With expertise in CAD design, 3D printing, and project leadership, I strive to
+                    bridge the gap between Mechanical Engineering and technology for sustainable development in rural
+                    communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+<!-- Education Section -->
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="educations-container">
+      <div class="education-card">
+          <h2>2023 - 2025</h2>
+          <h3>Veermata Jijabai Technological Institute (VJTI)</h3>
+          <p>Honors Degree in Automobile Engineering <br>CGPA: 8.0 (2025 Expected)</p>
+      </div>
+
+      <div class="education-card">
+          <h2>2021 - 2025</h2>
+          <h3>Veermata Jijabai Technological Institute (VJTI)</h3>
+          <p>B.Tech. in Mechanical Engineering <br>CGPA: 7.08 (2024 Expected)</p>
+      </div>
+
+      <div class="education-card">
+          <h2>2019 - 2021</h3>
+          <h3>Bassien Kerala Samajam</h3>
+          <p>HSC Maharashtra Board <br>Percentage: 89.50%</p>
+      </div>
+  </div>
+</section>
+
+
+    <hr>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h4><a href="https://github.com/TejasviGharat/Mars-Rover-Prototype">Mars Rover Prototype</a></h4>
+                <p>Designed and manufactured a Mars Rover Prototype to compete in the International Rover Challenge-24
+                </p>
+            </div>
+            <div class="project-card">
+                <h4><a href="https://github.com/TejasviGharat/Quality-Assurance-of-3D-printed-parts-Using-A.I">Quality
+                        Assurance of 3D Printed Parts Using A.I.</a></h4>
+                <p>Implemented a quality assurance system for 3D printed parts using A.I. algorithms</p>
+            </div>
+            <div class="project-card">
+                <h4><a href="https://github.com/TejasviGharat/Sugarcane-Juicer-Project">Sugarcane Juicer Project</a>
+                </h4>
+                <p>Designed and developed a highly efficient and cost-effective sugarcane juicer machine to maximize
+                    juice extraction.</p>
+            </div>
+            <div class="project-card">
+                <h4><a href="https://github.com/TejasviGharat/Self-Navigating-Trike-for-the-Blind">Self-Navigating
+                        Tricycle</a></h4>
+                <p>Designed an electric tricycle to enhance mobility for visually impaired and disabled individuals.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+    <!-- Skills and Achievements Section -->
+<section id="skills-achievements">
+  <h2 class="section-title">Skills & Achievements.</h2>
+  <div class="skills-achievements-container">
+      <!-- Skills Section -->
+      <div class="skills-container">
+          <h3 class="sub-section-title">Skills</h3>
+          <ul class="skills-list">
+              <li>SolidWorks</li>
+              <li>Ansys</li>
+              <li>AutoCAD</li>
+              <li>Fusion 360</li>
+              <li>MS Excel</li>
+              <li>Canva</li>
+              <li>LaTeX</li>
+              <li>MATLAB</li>
+          </ul>
+      </div>
+
+      <!-- Achievements Section -->
+      <div class="achievements-container">
+          <h3 class="sub-section-title">Achievements</h3>
+          <ul class="achievements-list">
+              <li>International Rover Challenge: Team Rank 16. Jan 2024</li>
+              <li>Maharashtra Common Entrance Test: Scored 95%. Sept 2021</li>
+              <li>Certificate of Achievement: Achieved 89.50% in HSC examination. Aug 2021</li>
+              <li>National Science Olympiad: School Rank 2, State Rank 93, National Rank 468/6050. Nov 2018</li>
+              <li>Certificate of Achievement: Achieved 80.20% in SSC examination. Nov 2018</li>
+              <li>Certificate of Appreciation: Participated in Smart Mob for Golden Book of World Records. Oct 2018</li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+    <hr>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+            <p>Email: <a href="mailto:tejasvigharat03@gmail.com">tejasvigharat03@gmail.com</a></p>
+            <p>Institutional Email: <a href="mailto:tpgharat_b21@me.vjti.ac.in">tpgharat_b21@me.vjti.ac.in</a></p>
+            <p>Phone: +91-8788353180</p>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/TejasviGharat" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Tejasvi Gharat. All rights reserved.</p>
+    </footer>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['A Mechanical Engineer.', 'A Problem Solver.', 'A Future Innovator.'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
